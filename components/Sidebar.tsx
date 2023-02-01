@@ -1,8 +1,10 @@
 // global sidebar
-function Sidebar(): JSX.Element {
+function Sidebar({ children }: any): JSX.Element {
   return (
-    <div>Sidebar</div>
-  )
+    <div>
+      <main>{children}</main>
+    </div>
+  );
 }
 
-export default Sidebar
+export default Sidebar;
