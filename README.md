@@ -23,3 +23,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## react-icons
 
 <https://www.npmjs.com/package/react-icons>
+
+## react-chartjs-2
+
+<https://www.npmjs.com/package/react-chartjs-2>
