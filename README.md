@@ -27,3 +27,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## react-chartjs-2
 
 <https://www.npmjs.com/package/react-chartjs-2>
+
+## next-themes
+
+<https://www.npmjs.com/package/next-themes>
