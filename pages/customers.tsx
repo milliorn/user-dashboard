@@ -14,7 +14,7 @@ function customers(): JSX.Element {
             <span>Name</span>
             <span className="sm:text-left text-right">Email</span>
             <span className="hidden md:grid">Last Order</span>
-            <span className="hidden sm:grid">Method</span>
+            <span className="hidden sm:grid">Payment</span>
           </div>
           <ul>
             {data.map((order, id) => (
@@ -23,14 +23,14 @@ function customers(): JSX.Element {
                 className="bg-gray-50 hover:bg-gray-100 dark:bg-gray-800  dark:hover:bg-gray-800 dark:text-white rounded-lg my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer"
               >
                 <div className="flex items-center">
-                  <div className="bg-purple-100 dark:bg-purple-900 p-3 rounded-lg">
+                  <div className="bg-purple-100 dark:bg-purple-900 p-3 rounded-lg hidden sm:flex">
                     <BsPersonFill className="text-purple-800 dark:text-purple-100" />
                   </div>
-                  <p className="pl-4">
+                  <p className="pl-4 text-xs sm:text-sm md:text-base">
                     {order.name.first + " " + order.name.last}
                   </p>
                 </div>
-                <p className="text-gray-600 dark:text-gray-200 sm:text-left text-right">
+                <p className="text-gray-600 dark:text-gray-200 sm:text-left text-right  text-xs sm:text-sm md:text-base">
                   {order.name.first}@gmail.com
                 </p>
                 <p className="hidden md:flex">{order.date}</p>
