@@ -28,7 +28,7 @@ function customers(): JSX.Element {
                     <BsPersonFill className="text-purple-800 dark:text-purple-100" />
                   </div>
                   <p className="pl-4 text-xs sm:text-sm md:text-base">
-                    {order.name.first + " " + order.name.last}
+                    {`${order.name.first} ${order.name.last}`}
                   </p>
                 </div>
                 <p className="text-gray-600 dark:text-gray-200 sm:text-left text-right text-xs sm:text-sm md:text-base truncate">
