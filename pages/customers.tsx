@@ -20,7 +20,7 @@ function customers(): JSX.Element {
           <ul>
             {data.map((order, id) => (
               <li
-                key={id}
+                key={`Customers_${id}`}
                 className="bg-gray-50 hover:bg-gray-100 dark:bg-gray-800  dark:hover:bg-gray-800 dark:text-white rounded-lg my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer"
               >
                 <div className="flex items-center">
