@@ -1,6 +1,7 @@
 import { data } from "../data/data";
 import { FaShoppingBag } from "react-icons/fa";
 
+// outputs the recent orders found on main dashboard page
 function RecentOrders(): JSX.Element {
   return (
     <div className="w-full col-span-1 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white dark:bg-black dark:text-white overflow-scroll">

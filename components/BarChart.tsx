@@ -21,6 +21,7 @@ ChartJS.register(
   Legend
 );
 
+// this displays the chart and its results found on the dashboard
 function BarChart(): JSX.Element {
   const [data, setData] = useState({
     datasets: [],

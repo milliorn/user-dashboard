@@ -2,6 +2,7 @@ import { FaShoppingBag } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { data } from "../data/data";
 
+// orders page
 function orders(): JSX.Element {
   return (
     <div className="bg-gray-100 dark:bg-gray-800 min-h-screen">

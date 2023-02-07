@@ -1,6 +1,7 @@
 import { BsPersonFill, BsThreeDotsVertical } from "react-icons/bs";
 import { data } from "../data/data";
 
+// page that outputs customers
 function customers(): JSX.Element {
   return (
     <div className="bg-gray-100 dark:bg-gray-800 min-h-screen">
