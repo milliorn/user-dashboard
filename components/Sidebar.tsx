@@ -7,31 +7,31 @@ import { RxSketchLogo, RxDashboard, RxPerson } from "react-icons/rx";
 function Sidebar({ children }: any): JSX.Element {
   return (
     <div className="flex">
-      <div className="fixed w-20 h-screen p-4 bg-white dark:bg-black dark:text-white border-r-[1px] flex flex-col justify-between">
+      <div className="fixed w-20 h-full p-4 bg-white dark:bg-black dark:text-white border-r flex flex-col justify-between">
         <div className="flex flex-col items-center">
-          <Link href="/">
-            <div className="bg-purple-800 dark:bg-purple-600 text-white p-3 rounded-lg inline-block">
+          <Link href="/" aria-label="home">
+            <div className="bg-purple-800 dark:bg-purple-600 text-white p-4 rounded-lg inline-block">
               <RxSketchLogo size={20} />
             </div>
           </Link>
-          <span className="border-b-[1px] border-gray-200 dark:border-gray-50 w-full p-2"></span>
-          <Link href="/">
-            <div className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-50 dark:hover:text-purple-800 cursor-pointer my-4 p-3 rounded-lg inline-block">
+          <span className="border-b border-gray-200 dark:border-gray-50 w-full p-4"></span>
+          <Link href="/" aria-label="dashboard">
+            <div className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-50 dark:hover:text-purple-800 cursor-pointer my-4 p-4 rounded-lg inline-block">
               <RxDashboard size={20} />
             </div>
           </Link>
-          <Link href="/customers">
-            <div className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-50 dark:hover:text-purple-800 cursor-pointer my-4 p-3 rounded-lg inline-block">
+          <Link href="/customers" aria-label="customers">
+            <div className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-50 dark:hover:text-purple-800 cursor-pointer my-4 p-4 rounded-lg inline-block">
               <RxPerson size={20} />
             </div>
           </Link>
-          <Link href="/orders">
-            <div className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-50 dark:hover:text-purple-800 cursor-pointer my-4 p-3 rounded-lg inline-block">
+          <Link href="/orders" aria-label="orders">
+            <div className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-50 dark:hover:text-purple-800 cursor-pointer my-4 p-4 rounded-lg inline-block">
               <HiOutlineShoppingBag size={20} />
             </div>
           </Link>
-          <Link href="/">
-            <div className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-50 dark:hover:text-purple-800 cursor-pointer my-4 p-3 rounded-lg inline-block">
+          <Link href="/" aria-label="settings">
+            <div className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-50 dark:hover:text-purple-800 cursor-pointer my-4 p-4 rounded-lg inline-block">
               <FiSettings size={20} />
             </div>
           </Link>

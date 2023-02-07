@@ -13,7 +13,9 @@ function orders(): JSX.Element {
         <div className="w-full m-auto p-4 border rounded-lg bg-white dark:bg-black dark:text-white overflow-y-auto">
           <div className="my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer">
             <span>Order</span>
-            <span className="sm:text-left text-right">Status</span>
+            <span className="sm:text-left text-right hidden sm:flex">
+              Status
+            </span>
             <span className="hidden md:grid">Last Order</span>
             <span className="hidden sm:grid">Method</span>
           </div>
@@ -36,7 +38,7 @@ function orders(): JSX.Element {
                     </p>
                   </div>
                 </div>
-                <p className="text-gray-600 dark:text-gray-200 sm:text-left text-right">
+                <p className="text-gray-600 dark:text-gray-200 sm:text-left text-right hidden sm:flex">
                   <span
                     className={
                       order.status == "Processing"
