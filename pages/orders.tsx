@@ -42,9 +42,9 @@ function orders(): JSX.Element {
                 <p className="text-gray-600 dark:text-gray-200 sm:text-left text-right hidden sm:flex">
                   <span
                     className={
-                      order.status == "Processing"
+                      order.status === "Processing"
                         ? "bg-green-200 dark:bg-green-700 p-2 rounded-lg"
-                        : order.status == "Completed"
+                        : order.status === "Completed"
                         ? "bg-blue-200 dark:bg-blue-700 p-2 rounded-lg"
                         : "bg-yellow-200 dark:bg-yellow-700 p-2 rounded-lg"
                     }
