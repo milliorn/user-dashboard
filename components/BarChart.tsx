@@ -1,3 +1,4 @@
+import type { ChartData, ChartOptions } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -21,11 +22,13 @@ ChartJS.register(
   Legend
 );
 
-// this displays the chart and its results found on the dashboard
+// https://react-chartjs-2.js.org/faq/typescript/
 function BarChart(): JSX.Element {
-  const [data, setData] = useState({
-    datasets: [],
-  } as any);
+  const [data, setData] = useState({ datasets: [] } as ChartData<
+    "bar",
+    (number | [number, number] | null)[],
+    unknown
+  >);
 
   const [chartOptions, setChartOptions] = useState({});
 

@@ -14,7 +14,7 @@ function Sidebar({ children }: any): JSX.Element {
               <RxSketchLogo size={20} />
             </div>
           </Link>
-          <span className="border-b border-gray-200 dark:border-gray-50 w-full p-4" />
+          <span className="border-b border-gray-200 dark:border-gray-50 w-full p-4"></span>
           <Link href="/" aria-label="dashboard">
             <div className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-50 dark:hover:text-purple-800 cursor-pointer my-4 p-4 rounded-lg inline-block">
               <RxDashboard size={20} />
