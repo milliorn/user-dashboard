@@ -1,3 +1,4 @@
+import type { ChartData, ChartOptions } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -21,10 +22,13 @@ ChartJS.register(
   Legend
 );
 
+// https://react-chartjs-2.js.org/faq/typescript/
 function BarChart(): JSX.Element {
-  const [data, setData] = useState({
-    datasets: [],
-  } as any);
+  const [data, setData] = useState({ datasets: [] } as ChartData<
+    "bar",
+    (number | [number, number] | null)[],
+    unknown
+  >);
 
   const [chartOptions, setChartOptions] = useState({});
 
@@ -65,11 +69,9 @@ function BarChart(): JSX.Element {
   }, []);
 
   return (
-    <>
-      <div className="w-full md:col-span-2 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white dark:bg-black">
-        <Bar data={data} options={chartOptions} />
-      </div>
-    </>
+    <div className="w-full md:col-span-2 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white dark:bg-black">
+      <Bar data={data} options={chartOptions} />
+    </div>
   );
 }
 

@@ -4,6 +4,7 @@ import RecentOrders from "@/components/RecentOrders";
 import TopCards from "@/components/TopCards";
 import Head from "next/head";
 
+// wrapper for app
 export default function Home() {
   return (
     <>

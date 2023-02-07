@@ -2,6 +2,7 @@ import { FaShoppingBag } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { data } from "../data/data";
 
+// orders page
 function orders(): JSX.Element {
   return (
     <div className="bg-gray-100 dark:bg-gray-800 min-h-screen">
@@ -22,7 +23,7 @@ function orders(): JSX.Element {
           <ul>
             {data.map((order, id) => (
               <li
-                key={id}
+                key={`Orders_${id}`}
                 className="bg-gray-50 hover:bg-gray-100  dark:bg-gray-900 dark:hover:bg-gray-800 dark:text-white rounded-lg my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer"
               >
                 <div className="flex">
@@ -41,9 +42,9 @@ function orders(): JSX.Element {
                 <p className="text-gray-600 dark:text-gray-200 sm:text-left text-right hidden sm:flex">
                   <span
                     className={
-                      order.status == "Processing"
+                      order.status === "Processing"
                         ? "bg-green-200 dark:bg-green-700 p-2 rounded-lg"
-                        : order.status == "Completed"
+                        : order.status === "Completed"
                         ? "bg-blue-200 dark:bg-blue-700 p-2 rounded-lg"
                         : "bg-yellow-200 dark:bg-yellow-700 p-2 rounded-lg"
                     }
