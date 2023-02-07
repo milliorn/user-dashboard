@@ -15,10 +15,14 @@ function RecentOrders(): JSX.Element {
               <FaShoppingBag className="text-purple-800 dark:text-purple-100" />
             </div>
             <div className="pl-4">
-              <p className="text-gray-800 dark:text-gray-100 font-bold">${order.total}</p>
-              <p className="text-gray-400 dark:text-gray-200 text-sm">{order.name.first}</p>
+              <p className="text-gray-800 dark:text-gray-100 font-bold">
+                ${order.total}
+              </p>
+              <p className="text-gray-400 dark:text-gray-200 text-sm">
+                {order.name.first}
+              </p>
             </div>
-            <p className="lg:flex md:hidden absolute right-6 text-sm">
+            <p className="lg:flex hidden absolute right-6 text-sm">
               {order.date}
             </p>
           </li>
