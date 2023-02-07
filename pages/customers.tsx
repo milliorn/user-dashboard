@@ -30,7 +30,7 @@ function customers(): JSX.Element {
                     {order.name.first + " " + order.name.last}
                   </p>
                 </div>
-                <p className="text-gray-600 dark:text-gray-200 sm:text-left text-right  text-xs sm:text-sm md:text-base">
+                <p className="text-gray-600 dark:text-gray-200 sm:text-left text-right text-xs sm:text-sm md:text-base truncate">
                   {order.name.first}@gmail.com
                 </p>
                 <p className="hidden md:flex">{order.date}</p>

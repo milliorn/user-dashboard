@@ -66,7 +66,7 @@ function BarChart(): JSX.Element {
 
   return (
     <>
-      <div className="w-full md:col-span-2 relative lg:h-[70vh] m-auto p-4 border rounded-lg bg-white dark:bg-black">
+      <div className="w-full md:col-span-2 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white dark:bg-black">
         <Bar data={data} options={chartOptions} />
       </div>
     </>
