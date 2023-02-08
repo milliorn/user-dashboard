@@ -41,9 +41,7 @@ function customers(): JSX.Element {
         className="bg-gray-50 hover:bg-gray-100 dark:bg-gray-800  dark:hover:bg-gray-800 dark:text-white rounded-lg my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer"
       >
         <div className="flex items-center">
-          <div className="bg-purple-100 dark:bg-purple-900 p-3 rounded-lg hidden sm:flex">
-            <BsPersonFill className="text-purple-800 dark:text-purple-100" />
-          </div>
+          <CustomersTableIcon />
           <p className="pl-4 text-xs sm:text-sm md:text-base">
             {`${order.name.first} ${order.name.last}`}
           </p>
@@ -61,6 +59,15 @@ function customers(): JSX.Element {
         </div>
       </li>
     );
+
+    // name icons
+    function CustomersTableIcon(): JSX.Element {
+      return (
+        <div className="bg-purple-100 dark:bg-purple-900 p-3 rounded-lg hidden sm:flex">
+          <BsPersonFill className="text-purple-800 dark:text-purple-100" />
+        </div>
+      );
+    }
   }
 
   // generate table heading
