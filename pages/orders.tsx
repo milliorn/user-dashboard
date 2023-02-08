@@ -9,13 +9,20 @@ function orders(): JSX.Element {
     <div className="bg-gray-100 dark:bg-gray-800 min-h-screen">
       <Header h2Left="Orders" h2Right="Welcome!" />
       <div className="p-4">
-        <div className="w-full m-auto p-4 border rounded-lg bg-white dark:bg-black dark:text-white overflow-y-auto">
-          <OrdersTableHeading />
-          <OrdersTable />
-        </div>
+        <OrdersTableBody />
       </div>
     </div>
   );
+
+  // table body
+  function OrdersTableBody() {
+    return (
+      <div className="w-full m-auto p-4 border rounded-lg bg-white dark:bg-black dark:text-white overflow-y-auto">
+        <OrdersTableHeading />
+        <OrdersTable />
+      </div>
+    );
+  }
 
   // orders table
   function OrdersTable(): JSX.Element {
