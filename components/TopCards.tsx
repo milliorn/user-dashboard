@@ -43,7 +43,7 @@ function TopCards(): JSX.Element {
       {topCardsData.map((row, index) => (
         <div
           className="lg:col-span-2 col-span-1 bg-white dark:bg-black dark:text-white flex justify-between w-full border p-4 rounded-lg"
-          key={index}
+          key={`topCardsData_${index}`}
         >
           <div className="flex flex-col w-full pb-4">
             <p className="text-sm sm:text-2xl font-bold">{row.paragraphOne}</p>

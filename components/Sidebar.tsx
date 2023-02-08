@@ -33,7 +33,7 @@ function Sidebar({ children }: any): JSX.Element {
         <span className="border-b border-gray-200 dark:border-gray-50 w-full p-4" />
 
         {sidebarButtonsData.map((e, i) => (
-          <Link href={e.href} aria-label={e.label} key={i}>
+          <Link href={e.href} aria-label={e.label} key={`SidebarButtons_${i}`}>
             <div className="bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-50 dark:hover:text-purple-800 cursor-pointer my-4 p-4 rounded-lg inline-block">
               {e.icon}
             </div>
