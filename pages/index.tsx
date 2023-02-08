@@ -22,7 +22,7 @@ export default function Home() {
   function Body(): JSX.Element {
     return (
       <main className="bg-gray-100 dark:bg-gray-800 min-h-screen">
-        <Header />
+        <Header h2Left="Dashboard" h2Right="Welcome!" />
         <TopCards />
         <div className="p-4 grid md:grid-cols-3 grid-cols-1 gap-4">
           <BarChart />

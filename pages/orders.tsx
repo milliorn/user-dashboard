@@ -1,15 +1,13 @@
 import { FaShoppingBag } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { data } from "../data/data";
+import Header from "@/components/Header";
 
 // orders page
 function orders(): JSX.Element {
   return (
     <div className="bg-gray-100 dark:bg-gray-800 min-h-screen">
-      <div className="flex justify-between px-4 pt-4 dark:text-white">
-        <h2>Orders</h2>
-        <h2>Welcome Back!</h2>
-      </div>
+      <Header h2Left="Orders" h2Right="Welcome!" />
       <div className="p-4">
         <div className="w-full m-auto p-4 border rounded-lg bg-white dark:bg-black dark:text-white overflow-y-auto">
           <div className="my-3 p-2 grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 items-center justify-between cursor-pointer">

@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import { BsPersonFill, BsThreeDotsVertical } from "react-icons/bs";
 import { data } from "../data/data";
 
@@ -5,10 +6,7 @@ import { data } from "../data/data";
 function customers(): JSX.Element {
   return (
     <div className="bg-gray-100 dark:bg-gray-800 min-h-screen">
-      <div className="flex justify-between p-4 dark:text-white">
-        <h2>Customers</h2>
-        <h2>Welcome Back!</h2>
-      </div>
+      <Header h2Left="Customers" h2Right="Welcome!" />
       <div className="p-4">
         <CustomersTable />
       </div>
