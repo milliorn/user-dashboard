@@ -2,12 +2,6 @@ import { FaShoppingBag } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { data } from "../data/data";
 import Header from "@/components/Header";
-import {
-  ReactElement,
-  JSXElementConstructor,
-  ReactFragment,
-  ReactPortal,
-} from "react";
 
 // orders page
 function orders(): JSX.Element {
