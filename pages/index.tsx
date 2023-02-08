@@ -14,14 +14,21 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Body />
+    </>
+  );
+
+  // main body
+  function Body(): JSX.Element {
+    return (
       <main className="bg-gray-100 dark:bg-gray-800 min-h-screen">
-        <Header />
+        <Header h2Left="Dashboard" h2Right="Welcome!" />
         <TopCards />
         <div className="p-4 grid md:grid-cols-3 grid-cols-1 gap-4">
           <BarChart />
           <RecentOrders />
         </div>
       </main>
-    </>
-  );
+    );
+  }
 }
